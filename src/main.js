@@ -28,5 +28,11 @@ $(document).ready(function() {
     $("#venusAge").text(age.venusAge);
     $("#venusLeft").text(age.venusLeft);
     $("#venusOver").text(age.venusOver);
+    $("#marsAge").text(age.marsAge);
+    $("#marsLeft").text(age.marsLeft);
+    $("#marsOver").text(age.marsOver);
+    $("#jupiterAge").text(age.jupiterAge);
+    $("#jupiterLeft").text(age.jupiterLeft);
+    $("#jupiterOver").text(age.jupiterOver);
   });
 });

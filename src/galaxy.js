@@ -16,13 +16,18 @@ export class GalaxyAge {
     this.venusOver = 0;
     this.marsOver = 0;
     this.jupiterOver = 0;
-
   }
 
   lifeCalc() {
     if (this.year <= this.expectancy) {
       this.mercuryLeft = +(this.yearsLeft / 0.24).toFixed(2);
+      this.venusLeft = +(this.yearsLeft / 0.62).toFixed(2);
+      this.marsLeft = +(this.yearsLeft / 1.88).toFixed(2);
+      this.jupiterLeft = +(this.yearsLeft / 11.86).toFixed(2);
     } else (this.year > this.expectancy)
       this.mercuryOver = +(this.yearsOver / 0.24).toFixed(2);
+      this.venusOver = +(this.yearsOver / 0.62).toFixed(2);
+      this.marsOver = +(this.yearsOver / 1.88).toFixed(2);
+      this.jupiterOver = +(this.yearsOver / 11.86).toFixed(2);
   }
 }

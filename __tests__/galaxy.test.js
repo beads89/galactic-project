@@ -55,5 +55,4 @@ describe("GalaxyAge", () => {
       age.lifeCalc();
       expect(age.mercuryOver).toEqual(41.67);
     });
-
 })

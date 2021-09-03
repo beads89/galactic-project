@@ -12,10 +12,12 @@ $(document).ready(function() {
     age.lifeCalc();
 
     $(".facts").show();
-    
+
     if (age.year <= 80) {
+      $(".overLife").hide();
       $(".underLife").show();
     } else {
+      $(".underLife").hide();
       $(".overLife").show();
     }
 

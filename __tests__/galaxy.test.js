@@ -18,5 +18,9 @@ describe("GalaxyAge", () => {
 
     test("it should convert Earth age to Mercury age", () => {
       expect(age.mercuryAge).toEqual(20.83);
-    })
+    });
+
+    test("it should convert Earth age to Venus age", () => {
+      expect(age.venusAge).toEqual(8.06);
+    });
 })

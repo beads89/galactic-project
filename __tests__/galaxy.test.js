@@ -7,5 +7,8 @@ import { GalaxyAge } from "../src/galaxy";
 // Display how many years over life expectancy someone has lived(yay)
 
 describe("GalaxyAge", () => {
-  
+  test("it should show age in earth years", () => {
+    let age = new GalaxyAge(5);
+    expect(age.year).toEqual(5);
+  })
 })

@@ -3,3 +3,11 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import { GalaxyAge } from './galaxy';
+
+$(document).ready(function() {
+  $("form#age").submit(function(event) {
+    event.preventDefault();
+    GalaxyAge.year = $("#yearInput").val();
+
+  })
+})

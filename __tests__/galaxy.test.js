@@ -38,6 +38,7 @@ describe("GalaxyAge", () => {
 
     test("it should show how many Earth years someone is expected to have left to live", () => {
       expect(age.yearsLeft).toEqual(75);
+      console.log(age.expectancy);
     });
 
     test("it should show how many Earth years over life expectancy someone has lived", () => {

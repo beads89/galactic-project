@@ -23,4 +23,8 @@ describe("GalaxyAge", () => {
     test("it should convert Earth age to Venus age", () => {
       expect(age.venusAge).toEqual(8.06);
     });
+
+    test("it should convert Earth age to Mars age", () => {
+      expect(age.marsAge).toEqual(0.53);
+    });
 })

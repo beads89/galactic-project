@@ -55,4 +55,10 @@ describe("GalaxyAge", () => {
       age.lifeCalc();
       expect(age.mercuryOver).toEqual(41.67);
     });
+
+    test("it should show how many years over life expectancy someone has lived in another planet", () => {
+      let age = new GalaxyAge(90);
+      age.lifeCalc();
+      expect(age.venusOver).toEqual(16.13);
+    });
 })

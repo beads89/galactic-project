@@ -9,12 +9,14 @@ export class GalaxyAge {
     this.marsAge = +(year / 1.88).toFixed(2);
     this.jupiterAge = +(year / 11.86).toFixed(2);
     this.mercuryLeft = 0;
+    this.mercuryOver = 0;
 
   }
 
   lifeCalc() {
     if (this.year <= this.expectancy) {
       this.mercuryLeft = +(this.yearsLeft / 0.24).toFixed(2);
-    }
+    } else (this.year > this.expectancy)
+      this.mercuryOver = +(this.yearsOver / 0.24).toFixed(2);
   }
 }

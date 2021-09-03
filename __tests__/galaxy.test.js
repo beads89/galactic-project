@@ -46,6 +46,7 @@ describe("GalaxyAge", () => {
     });
 
     test("it should show how many years someone is expected to have left to live on a planet other than Earth", () => {
+      age.lifeCalc();
       expect(age.mercuryLeft).toEqual(312.5);
     });
 

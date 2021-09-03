@@ -7,7 +7,13 @@ import { GalaxyAge } from './galaxy';
 $(document).ready(function() {
   $("form#age").submit(function(event) {
     event.preventDefault();
-    GalaxyAge.year = $("#yearInput").val();
+    let year = $("#yearInput").val();
+    let age = new GalaxyAge(year);
+    age.lifeCalc();
 
+    $("#earthAge").text(age.year);
+    $("#mercAge").text(age.mercuryAge);
+    $("#mercLeft").text(age.mercuryLeft);
+    $("#mercOver").text(age.mercuryOver);
   })
 })

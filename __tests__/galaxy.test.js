@@ -11,7 +11,12 @@ describe("GalaxyAge", () => {
     beforeEach(() => {
       age = new GalaxyAge(5);
     });
+
     test("it should show age in earth years", () => {
     expect(age.year).toEqual(5);
-  })
+  });
+
+    test("it should convert Earth age to Mercury age", () => {
+      expect(age.mercuryAge).toEqual(20.83);
+    })
 })

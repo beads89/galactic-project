@@ -12,7 +12,7 @@ describe("GalaxyAge", () => {
       age = new GalaxyAge(5);
     });
 
-    test("it should show age in earth years", () => {
+    test("it should show age in Earth years", () => {
     expect(age.year).toEqual(5);
   });
 
@@ -25,10 +25,14 @@ describe("GalaxyAge", () => {
     });
 
     test("it should convert Earth age to Mars age", () => {
-      expect(age.marsAge).toEqual(2.66); //Was previously 0.53, did not take into account base age of (5).
+      expect(age.marsAge).toEqual(2.66);
     });
 
     test("it should convert Earth age to Jupiter age", () => {
       expect(age.jupiterAge).toEqual(0.42);
+    });
+
+    test("it should show life expectancy", () => {
+      expect(age.expectancy).toEqual(80);
     });
 })

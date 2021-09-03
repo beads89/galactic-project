@@ -11,6 +11,14 @@ $(document).ready(function() {
     let age = new GalaxyAge(year);
     age.lifeCalc();
 
+    $(".facts").show();
+    
+    if (age.year <= 80) {
+      $(".underLife").show();
+    } else {
+      $(".overLife").show();
+    }
+
     $("#earthAge").text(age.year);
     $("#mercAge").text(age.mercuryAge);
     $("#mercLeft").text(age.mercuryLeft);

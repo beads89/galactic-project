@@ -61,4 +61,9 @@ describe("GalaxyAge", () => {
       age.lifeCalc();
       expect(age.venusOver).toEqual(16.13);
     });
+
+    test("it should show how many years someone is expected to have left to live on a planet other than Earth", () => {
+      age.lifeCalc();
+      expect(age.venusLeft).toEqual(120.97);
+    });
 })

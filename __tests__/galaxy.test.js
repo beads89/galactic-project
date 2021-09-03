@@ -25,6 +25,6 @@ describe("GalaxyAge", () => {
     });
 
     test("it should convert Earth age to Mars age", () => {
-      expect(age.marsAge).toEqual(0.53);
+      expect(age.marsAge).toEqual(2.66); //Was previously 0.53, did not take into account base age of (5).
     });
 })

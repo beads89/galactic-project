@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application takes a user's age and displays how old they are on Mercury, Venus, Mars and Jupiter. It will also reveal the grim reality of how much longer you are expected to live, or if you're lucky, how much longer over life expectancy you've been kickin' around for!_
+_This application takes a user's age and displays how old they are on Mercury, Venus, Mars and Jupiter. It will also reveal the grim reality of how much longer you are expected to live, or if you're lucky, how long over a life expectancy of 80 Earth years you've been kickin' around for!_
 
 ## Technologies Used
 

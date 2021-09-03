@@ -1,5 +1,5 @@
 export class GalaxyAge {
-  constructor() {
-
+  constructor(year) {
+    this.year = year;
   }
 }

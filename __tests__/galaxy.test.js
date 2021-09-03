@@ -2,7 +2,7 @@ import { GalaxyAge } from "../src/galaxy";
 
 // Need tests for: 
 // Displaying age in Earth years then convert to Mercury, Venus, Mars, Jupiter
-// Displaying a base life expectancy(75, 80, 90, 100?)
+// Displaying a base life expectancy(80)
 // Display remaining life expectancy for Earth and converting to other planets
 // Display how many years over life expectancy someone has lived(yay)
 
@@ -44,4 +44,9 @@ describe("GalaxyAge", () => {
       let age = new GalaxyAge(90)
       expect(age.yearsOver).toEqual(10);
     });
+
+    test("it should show how many years someone is expected to have left to live on a planet other than Earth", () => {
+      expect(age.mercuryLeft).toEqual(312.5);
+    });
+
 })

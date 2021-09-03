@@ -9,7 +9,13 @@ export class GalaxyAge {
     this.marsAge = +(year / 1.88).toFixed(2);
     this.jupiterAge = +(year / 11.86).toFixed(2);
     this.mercuryLeft = 0;
+    this.venusLeft = 0;
+    this.marsLeft = 0;
+    this.jupiterLeft = 0;
     this.mercuryOver = 0;
+    this.venusOver = 0;
+    this.marsOver = 0;
+    this.jupiterOver = 0;
 
   }
 

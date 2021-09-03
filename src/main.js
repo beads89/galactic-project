@@ -25,5 +25,8 @@ $(document).ready(function() {
     $("#mercAge").text(age.mercuryAge);
     $("#mercLeft").text(age.mercuryLeft);
     $("#mercOver").text(age.mercuryOver);
-  })
-})
+    $("#venusAge").text(age.venusAge);
+    $("#venusLeft").text(age.venusLeft);
+    $("#venusOver").text(age.venusOver);
+  });
+});
